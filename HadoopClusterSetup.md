@@ -39,7 +39,7 @@ username : ubuntu, password: empty
  * Save and exit
  * sudo vi $HADOOP_CONF/core-site.xml
  * Add two properties to name the file system and directory , save the file 
-   
+   ```xml
    <configuration>
      <property>
         <name>fs.default.name</name>
@@ -51,9 +51,10 @@ username : ubuntu, password: empty
         <value>/home/ubuntu/hdfstmp</value>
      </property>
    </configuration>
-  
+  ```xml
   * configure hdfs-site file - sudo vi $HADOOP_PREFIX/hdfs-site.xml
   * Add properties to enable replication factor and set it to 2 as we have only 2 data nodes currently
+  ```xml
     <configuration>
       <property>
           <name>dfs.replication</name>
@@ -64,16 +65,17 @@ username : ubuntu, password: empty
            <value>false</value>
       </property>
    </configuration>
-
+  ```xml
   * In open mapred-site.xml file to set map reduce jobs
   * add following properties in the file $HADOOP_CONF/mapred-site.xml
+  ```xml
     <configuration>
       <property>
         <name>mapred.job.tracker</name>
         <value>hdfs://ec2-18-221-252-19.us-east-2.compute.amazonaws.com:8021</value>
     </property>
    </configuration>
-
+```xml
      hdfs://ec2-18-221-252-19.us-east-2.compute.amazonaws.com - location of job tracker (Master node) and listening port (8021)
      
    * copy above configured files to other instsnces using the command 'scp hadoop-env.sh core-site.xml hdfs-site.xml mapred-site.xml 
@@ -82,8 +84,8 @@ username : ubuntu, password: empty
    * Similarly configure slaves in Master's $HADOOP_CONF/slaves file by adding datanodes hostnames
    * Copy above files to SSN
    * masters file in slaves will be empty and their slaves file is updated wit host name of other slave node
-   * To start hadoop daaemon, run below commands
-       'hadoop HadoopNameNode -format'
-       'cd $HADOOP_CONF'
-       'start-all.sh'
+   * To start hadoop daaemon, run below commands<br/>
+       'hadoop HadoopNameNode -format'<br/>
+       'cd $HADOOP_CONF' <br/>
+       'start-all.sh'<br/>
    * SSN , data nodes are started running
