@@ -51,7 +51,7 @@ username : ubuntu, password: empty
         <value>/home/ubuntu/hdfstmp</value>
      </property>
    </configuration>
-  ```xml
+  ```
   * configure hdfs-site file - sudo vi $HADOOP_PREFIX/hdfs-site.xml
   * Add properties to enable replication factor and set it to 2 as we have only 2 data nodes currently
   ```xml
@@ -65,7 +65,7 @@ username : ubuntu, password: empty
            <value>false</value>
       </property>
    </configuration>
-  ```xml
+  ```
   * In open mapred-site.xml file to set map reduce jobs
   * add following properties in the file $HADOOP_CONF/mapred-site.xml
   ```xml
@@ -75,7 +75,7 @@ username : ubuntu, password: empty
         <value>hdfs://ec2-18-221-252-19.us-east-2.compute.amazonaws.com:8021</value>
     </property>
    </configuration>
-```xml
+```
      hdfs://ec2-18-221-252-19.us-east-2.compute.amazonaws.com - location of job tracker (Master node) and listening port (8021)
      
    * copy above configured files to other instsnces using the command 'scp hadoop-env.sh core-site.xml hdfs-site.xml mapred-site.xml 
