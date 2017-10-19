@@ -18,12 +18,11 @@ username : ubuntu, password: empty
   * tar -xzvf hadoop-2.8.1.tar.gz
   * move created folder to '/home/ubuntu/hadoop' folder
   * set environment variables in '~/.profile' file by adding following lines at the last
-   
-   HADOOP_CONF=/home/ubuntu/hadoop/conf
-   HADOOP_PREFIX=/home/ubuntu/hadoop
-   JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
-   PATH=$PATH:$HADOOP_PREFIX/bin
-   
+    'HADOOP_CONF=/home/ubuntu/hadoop/conf' <br/>
+    'HADOOP_PREFIX=/home/ubuntu/hadoop' <br/>
+    'JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64' <br/>   
+    'PATH=$PATH:$HADOOP_PREFIX/bin' <br/>
+     
    check if they are set by running 'source ~/.profile' , 'set env' and echo $HADOOP_CONF on the shell
  
  3. Connect Master,SSN and slave nodes
