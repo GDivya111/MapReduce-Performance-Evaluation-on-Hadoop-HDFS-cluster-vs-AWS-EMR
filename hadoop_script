@@ -1,0 +1,6 @@
+export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar:/home/vagrant/jackson-core-2.2.3.jar:/home/vagrant/jackson-databind-2.1.4.jar:/home/vagrant/jackson-annotations-2.0.1.jar
+bin/hadoop com.sun.tools.javac.Main SpamDetection.java
+jar cf sd.jar SpamDetection*.class
+bin/hadoop fs -ls /home/vagrant/input_sd_new/
+bin/hadoop jar sd.jar SpamDetection /home/vagrant/input_sd_new /home/vagrant/output_sd
+bin/hadoop fs -cat /home/vagrant/output_sd/part-r-00000
