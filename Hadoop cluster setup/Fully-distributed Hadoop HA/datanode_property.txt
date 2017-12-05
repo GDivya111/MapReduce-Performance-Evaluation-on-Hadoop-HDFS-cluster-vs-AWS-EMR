@@ -1,0 +1,6 @@
+Additional property in datanode hdfs-site.xml
+
+<property>
+<name> dfs.datanode.data.dir</name>
+<value>/home/ubuntu/HA/data/datanode</value>
+</property>
