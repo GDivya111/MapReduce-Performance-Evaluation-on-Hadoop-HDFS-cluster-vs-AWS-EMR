@@ -1,0 +1,73 @@
+17/12/05 18:44:28 WARN util.NativeCodeLoader: Unable to load native-hadoop libra                                                                             ry for your platform... using builtin-java classes where applicable
+17/12/05 18:44:28 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0                                                                             :8032
+17/12/05 18:44:29 WARN mapreduce.JobResourceUploader: Hadoop command-line option                                                                              parsing not performed. Implement the Tool interface and execute your applicatio                                                                             n with ToolRunner to remedy this.
+17/12/05 18:44:29 INFO input.FileInputFormat: Total input files to process : 1
+17/12/05 18:44:29 INFO mapreduce.JobSubmitter: number of splits:2
+17/12/05 18:44:29 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_15                                                                             12487117415_0005
+17/12/05 18:44:29 INFO impl.YarnClientImpl: Submitted application application_15                                                                             12487117415_0005
+17/12/05 18:44:29 INFO mapreduce.Job: The url to track the job: http://ip-172-31                                                                             -9-165:8088/proxy/application_1512487117415_0005/
+17/12/05 18:44:29 INFO mapreduce.Job: Running job: job_1512487117415_0005
+17/12/05 18:44:36 INFO mapreduce.Job: Job job_1512487117415_0005 running in uber                                                                              mode : false
+17/12/05 18:44:36 INFO mapreduce.Job:  map 0% reduce 0%
+17/12/05 18:44:43 INFO mapreduce.Job:  map 50% reduce 0%
+17/12/05 18:44:52 INFO mapreduce.Job:  map 76% reduce 0%
+17/12/05 18:44:56 INFO mapreduce.Job:  map 100% reduce 0%
+17/12/05 18:44:57 INFO mapreduce.Job:  map 100% reduce 100%
+17/12/05 18:44:57 INFO mapreduce.Job: Job job_1512487117415_0005 completed succe                                                                             ssfully
+17/12/05 18:44:57 INFO mapreduce.Job: Counters: 50
+        File System Counters
+                FILE: Number of bytes read=6340128
+                FILE: Number of bytes written=13099490
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=153157563
+                HDFS: Number of bytes written=2679
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters
+                Killed map tasks=1
+                Launched map tasks=3
+                Launched reduce tasks=1
+                Data-local map tasks=3
+                Total time spent by all maps in occupied slots (ms)=24322
+                Total time spent by all reduces in occupied slots (ms)=10566
+                Total time spent by all map tasks (ms)=24322
+                Total time spent by all reduce tasks (ms)=10566
+                Total vcore-milliseconds taken by all map tasks=24322
+                Total vcore-milliseconds taken by all reduce tasks=10566
+                Total megabyte-milliseconds taken by all map tasks=24905728
+                Total megabyte-milliseconds taken by all reduce tasks=10819584
+        Map-Reduce Framework
+                Map input records=278677
+                Map output records=278677
+                Map output bytes=5782768
+                Map output materialized bytes=6340134
+                Input split bytes=294
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=39387
+                Reduce shuffle bytes=6340134
+                Reduce input records=278677
+                Reduce output records=129
+                Spilled Records=557354
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=2300
+                CPU time spent (ms)=57000
+                Physical memory (bytes) snapshot=982593536
+                Virtual memory (bytes) snapshot=6284869632
+                Total committed heap usage (bytes)=546832384
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters
+                Bytes Read=153157269
+        File Output Format Counters
+                Bytes Written=2679

@@ -1,0 +1,75 @@
+17/12/05 19:06:36 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/12/05 19:06:36 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+17/12/05 19:06:37 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+17/12/05 19:06:37 INFO input.FileInputFormat: Total input files to process : 1
+17/12/05 19:06:37 INFO mapreduce.JobSubmitter: number of splits:4
+17/12/05 19:06:37 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1512487117415_0006
+17/12/05 19:06:37 INFO impl.YarnClientImpl: Submitted application application_1512487117415_0006
+17/12/05 19:06:37 INFO mapreduce.Job: The url to track the job: http://ip-172-31-9-165:8088/proxy/application_1512487117415_0006/
+17/12/05 19:06:37 INFO mapreduce.Job: Running job: job_1512487117415_0006
+17/12/05 19:06:44 INFO mapreduce.Job: Job job_1512487117415_0006 running in uber mode : false
+17/12/05 19:06:44 INFO mapreduce.Job:  map 0% reduce 0%
+17/12/05 19:06:59 INFO mapreduce.Job:  map 25% reduce 0%
+17/12/05 19:07:00 INFO mapreduce.Job:  map 72% reduce 0%
+17/12/05 19:07:05 INFO mapreduce.Job:  map 86% reduce 0%
+17/12/05 19:07:06 INFO mapreduce.Job:  map 91% reduce 0%
+17/12/05 19:07:07 INFO mapreduce.Job:  map 100% reduce 0%
+17/12/05 19:07:09 INFO mapreduce.Job:  map 100% reduce 100%
+17/12/05 19:07:10 INFO mapreduce.Job: Job job_1512487117415_0006 completed successfully
+17/12/05 19:07:10 INFO mapreduce.Job: Counters: 50
+        File System Counters
+                FILE: Number of bytes read=19013899
+                FILE: Number of bytes written=38726566
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=547958567
+                HDFS: Number of bytes written=1531766
+                HDFS: Number of read operations=15
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters
+                Killed map tasks=1
+                Launched map tasks=4
+                Launched reduce tasks=1
+                Data-local map tasks=4
+                Total time spent by all maps in occupied slots (ms)=66189
+                Total time spent by all reduces in occupied slots (ms)=8086
+                Total time spent by all map tasks (ms)=66189
+                Total time spent by all reduce tasks (ms)=8086
+                Total vcore-milliseconds taken by all map tasks=66189
+                Total vcore-milliseconds taken by all reduce tasks=8086
+                Total megabyte-milliseconds taken by all map tasks=67777536
+                Total megabyte-milliseconds taken by all reduce tasks=8280064
+        Map-Reduce Framework
+                Map input records=836006
+                Map output records=836006
+                Map output bytes=17341881
+                Map output materialized bytes=19013917
+                Input split bytes=528
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=478235
+                Reduce shuffle bytes=19013917
+                Reduce input records=836006
+                Reduce output records=73852
+                Spilled Records=1672012
+                Shuffled Maps =4
+                Failed Shuffles=0
+                Merged Map outputs=4
+                GC time elapsed (ms)=9394
+                CPU time spent (ms)=186490
+                Physical memory (bytes) snapshot=1675448320
+                Virtual memory (bytes) snapshot=10458484736
+                Total committed heap usage (bytes)=974127104
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters
+                Bytes Read=547958039
+        File Output Format Counters
+                Bytes Written=1531766
