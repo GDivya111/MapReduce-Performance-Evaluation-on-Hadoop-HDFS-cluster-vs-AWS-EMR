@@ -17,10 +17,8 @@ Online product reviews are becoming prevalent due to the veracity of reviews pro
 
 [EMR Architecture](https://github.ncsu.edu/CSC591-DIC/Team3Project/tree/master/Images)  
 
-**Source Code**
 [Spam Detection MapReduce Application Source Code](https://github.ncsu.edu/CSC591-DIC/Team3Project/tree/master/src/com/spamreviews/detection)
 
-**Results**
 [Hadoop over EC2 results](https://github.ncsu.edu/CSC591-DIC/Team3Project/tree/master/Screenshots/EC2-HDFS-%20Results)
 
 [EMR results](https://github.ncsu.edu/CSC591-DIC/Team3Project/tree/master/Screenshots/EMR%20Results)
