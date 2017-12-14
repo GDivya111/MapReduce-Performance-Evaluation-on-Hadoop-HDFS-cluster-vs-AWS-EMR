@@ -1,18 +1,28 @@
-# Team 3 WeLoveData
+# MapReduce performance evaluation on EC2 (HDFS HA) vs EMR  
+## Application - Online spam reviewers detection  
+### CSC 591(002) Data Intensive Computing Fall ‘17  
+**Team 3  
+Divya Guttikonda (dguttik), Nithya Kumar (nkumar8), Sahithi Guddeti (sguddet)**  
 
-Check out the project claims in Claims.md
+**Abstract**  
+Online product reviews are becoming prevalent due to the veracity of reviews provided by the users. This particularly helps a lot of users in their decision-making process during product purchase, for example Amazon product reviews. One major problem that exists is ‘opinion spamming’ where fraudulent reviewers write manipulative spam reviews to promote or demote a product. Since this is a large scale distributed problem, analyzing and handling huge volumes of data is limited by storage and cost constraints. In this project, we have dealt with the above-mentioned problem by proposing a MapReduce application framework to detect online spam reviewers and by building & comparing two infrastructure models viz., Hadoop HA on EC2 (with EBS) and EMR (with S3) to handle huge volumes of input data. Our project successfully detects spammers on different product reviews big datasets [1] and also evaluates the performance of MapReduce on the built EC2 and EMR clusters. The performance evaluation is done considering the aspects of application execution time, instance costs, storage costs, number of input splits, number of map and reduce tasks, and the number of output file partitions. Our conclusions are focused on the optimality and cost-effectiveness of our MapReduce application in detecting spammers and on the infrastructure decision to be taken under different data-intensive scenarios.  
 
-Hadoop cluster over EC2 instances - https://www.google.com/url?q=https%3A%2F%2Fgithub.ncsu.edu%2FCSC591-DIC%2FTeam3Project%2Ftree%2Fmaster%2FHadoop%2520cluster%2520setup&sa=D&sntz=1&usg=AFQjCNEH3IvsDcFZYL5B1HNZCSawM0zUdQ
+[Project Claims](https://github.ncsu.edu/CSC591-DIC/Team3Project/blob/master/Claims.md)
 
-Architecture:
-EMR - https://www.google.com/url?q=https%3A%2F%2Fgithub.ncsu.edu%2FCSC591-DIC%2FTeam3Project%2Ftree%2Fmaster%2FImages&sa=D&sntz=1&usg=AFQjCNF_2myp66toZVnFzS5iPT6RIIjHNg
+[Project Report](https://github.ncsu.edu/CSC591-DIC/Team3Project/blob/master/Final%20Paper%20DIC%20dguttik_nkumar8_sguddet_v1.pdf)  
 
-Spam Detection MapReduce Application Source Code - https://www.google.com/url?q=https%3A%2F%2Fgithub.ncsu.edu%2FCSC591-DIC%2FTeam3Project%2Ftree%2Fmaster%2Fsrc%2Fcom%2Fspamreviews%2Fdetection&sa=D&sntz=1&usg=AFQjCNE_fjS0m9Hdo-DYIT1ez_kQkix1pw
+[Project Presentation](https://github.ncsu.edu/CSC591-DIC/Team3Project/blob/master/CSC%20591%20DIC%20Project%20Presentation%20.pdf)
 
+[Hadoop cluster over EC2 instances](https://github.ncsu.edu/CSC591-DIC/Team3Project/tree/master/Hadoop%20cluster%20setup)
 
-Results:
-Hadoop over EC2 results - https://www.google.com/url?q=https%3A%2F%2Fgithub.ncsu.edu%2FCSC591-DIC%2FTeam3Project%2Ftree%2Fmaster%2FScreenshots%2FEC2-HDFS-%2520Results&sa=D&sntz=1&usg=AFQjCNFYHPG1bTbH1dqKEu7rXFkMc-nDzA
+[EMR Architecture](https://github.ncsu.edu/CSC591-DIC/Team3Project/tree/master/Images)  
 
-EMR results - https://www.google.com/url?q=https%3A%2F%2Fgithub.ncsu.edu%2FCSC591-DIC%2FTeam3Project%2Ftree%2Fmaster%2FScreenshots%2FEMR%2520Results&sa=D&sntz=1&usg=AFQjCNFRzYqM7VACp7qEwb1QP5qE2mp7dA
+**Source Code**
+[Spam Detection MapReduce Application Source Code](https://github.ncsu.edu/CSC591-DIC/Team3Project/tree/master/src/com/spamreviews/detection)
+
+**Results**
+[Hadoop over EC2 results][https://github.ncsu.edu/CSC591-DIC/Team3Project/tree/master/Screenshots/EC2-HDFS-%20Results]
+
+[EMR results](https://github.ncsu.edu/CSC591-DIC/Team3Project/tree/master/Screenshots/EMR%20Results)
 
 
