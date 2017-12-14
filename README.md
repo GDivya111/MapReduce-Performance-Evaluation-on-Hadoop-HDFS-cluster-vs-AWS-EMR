@@ -21,6 +21,6 @@ Online product reviews are becoming prevalent due to the veracity of reviews pro
 
 [Hadoop over EC2 results](https://github.com/nithya-kumar/CSC591_DIC_F17_Project/tree/master/Screenshots/EC2-HDFS-%20Results)
 
-[EMR results]https://github.com/nithya-kumar/CSC591_DIC_F17_Project/tree/master/Screenshots/EMR%20Results)
+[EMR results](https://github.com/nithya-kumar/CSC591_DIC_F17_Project/tree/master/Screenshots/EMR%20Results)
 
 
